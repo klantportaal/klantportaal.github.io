@@ -1,0 +1,133 @@
+/*
+
+ Set up
+
+*/
+
+:root {
+    --light-bg-color: #ffff;
+    --light-font-color: #ffff;
+    --dark-bg-color: #252525;
+    --dark-font-color: #252525;
+    --purple-highlight-color:#762f80;
+    --orange-highlight-color:#ffa000;
+  }
+
+/*
+
+  Rules
+
+*/
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* * {
+    scroll-behavior: smooth;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #EEEEEE;
+}
+
+
+header {
+    height: 50vh;
+    background-color: #252525;
+    color: #F5F5F5;
+}
+
+.header-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top:50px;
+    
+}
+
+.header-container .responsive-image{
+    width:100%;
+    padding-top: 35vh;
+}
+.header-anchor-image{
+  position: relative;
+  top: 85vh;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.copyright {
+    background-color: #252525;
+  
+      color: #787878;
+      letter-spacing: 4px;
+      text-align: center;
+  }
+  
+.cl{
+    background-color: var(--light-bg-color);
+    color: var(--dark-font-color);
+} 
+.cd{
+    background-color: var(--dark-bg-color);
+    color: var(--light-font-color);
+
+}
+
+ul{
+    text-align: left;
+}
+.cbtn{
+    border: 2px solid var(--orange-highlight-color);
+    background-color: transparent;
+    color: var(--orange-highlight-color);
+    padding: 14px 28px;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cbtn:hover{
+    border: 2px solid var(--light-font-color); ;
+    color: var(--light-font-color); ;
+}
+.navigation-header{
+    padding-top: 50px;
+}
+.navigation-header:after,.navigation-header:before{
+    content: " ";
+    display: table;
+}
+.site-logo{
+    color: #fff;
+    float: left;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #000;
+    text-transform: uppercase;
+}
+.site-nav{
+    float: right;
+    list-style-type: none;
+    margin: 7px 0 0;
+    padding: 0;
+}
+.site-nav li{
+    display:inline;
+}
+.site-nav a {
+    color: var(--orange-highlight-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media only screen and (max-width: 800px){
+  .site-logo, .site-nav {
+    float: none;
+  }  
+}
